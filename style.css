@@ -44,18 +44,56 @@ button > span {
 }
 
 li {
+
     font-weight: bold;
-    color: white;
-    background-color: #44007c;
+    color: #44007c;
+    background-color: #ffffff;
     list-style: none;
 
+    position: relative;
     border-radius: 10px;
     padding: 5px;
     margin: 10px;
-}
+
+    transition: all .2s;
+    
+} 
+
 
 li:hover {
-    background-color: #52057b;
-    transition: .2s;
+    transform: scale(1.05);
+    
+    
+    
+    
+}
+
+li > button {
+    background-color: #6c03a5;
+    border-radius: 0px 9px 9px 0px;
+    
+    position: absolute;
+    top: 0%;
+    right: 0%;
+
+    transform: scale(1.05);
+
+    cursor: pointer;    
+
+}
+
+li > button:hover {
+    background-color: red;
+    transition: .5s;
+}
+
+li.clicavel.clicada {
+    background-color: white;
+    color: #44007c;
+    transform: scale(1.05);
+}
+
+.remover-icon{
+    color: white
 }
 
